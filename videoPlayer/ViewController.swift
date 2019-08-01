@@ -30,8 +30,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         let avPlayer = AVPlayer(url:videourl! as URL)
         
-        cell.PlayerView?.playerLayer.player = avPlayer
-        cell.PlayerView.player?.play()
+        cell.PlayerViewClass?.playerLayer.player = avPlayer
+        cell.PlayerViewClass.player?.play()
         return cell
     }
 }
